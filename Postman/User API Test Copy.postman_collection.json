@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "570c067b-5eff-41ff-86b0-add5564c20c4",
+		"name": "User API Test Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33511578"
+	},
+	"item": [
+		{
+			"name": "GET User API",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Get All Users\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.response.to.be.json;\r",
+							"\r",
+							"    const responseBody = pm.response.json();\r",
+							"    pm.expect(responseBody).to.be.an(\"array\").and.not.empty;\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7254/api/User/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7254",
+					"path": [
+						"api",
+						"User",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST User API",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Create User\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.response.to.be.json;\r",
+							"\r",
+							"    const responseBody = pm.response.json();\r",
+							"    pm.expect(responseBody.message).to.equal(\"User created successfully.\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"0000God@lalitha.com\",\r\n    \"password\": \"qwerty!123\",\r\n    \"username\": \"user1234\",\r\n    \"purchaseHistory\": \"No purchase history\",\r\n    \"shippingAddress\": \"123 Main Street\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7254/api/User",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7254",
+					"path": [
+						"api",
+						"User"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT User API",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"updatedpdated User\", function () {",
+							"    pm.response.to.have.status(200);",
+							"    pm.response.to.be.json;",
+							"",
+							"    const responseBody = pm.response.json();",
+							"    pm.expect(responseBody.message).to.equal(\"User updated successfully.\");",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"D@lalitha.com\",\r\n    \"password\": \"1234\",\r\n    \"username\": \"customer1234\",\r\n    \"purchaseHistory\": \"No purchase history\",\r\n    \"shippingAddress\": \"111 Main Street\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7254/api/User/12",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7254",
+					"path": [
+						"api",
+						"User",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE User API",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Delete User\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.response.to.be.json;\r",
+							"\r",
+							"    const responseBody = pm.response.json();\r",
+							"    pm.expect(responseBody.message).to.equal(\"User deleted successfully.\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": 3\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7254/api/User/12",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7254",
+					"path": [
+						"api",
+						"User",
+						"12"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

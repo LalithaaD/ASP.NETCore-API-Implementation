@@ -1,0 +1,146 @@
+{
+	"id": "704491a2-2b54-49e5-8c17-c42040191916",
+	"name": "User API Test Copy",
+	"timestamp": "2024-03-27T01:22:55.817Z",
+	"collection_id": "33511578-570c067b-5eff-41ff-86b0-add5564c20c4",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 4,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-03-27T01:22:54.757Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "dee2d6d1-80c3-4c43-bf36-9229ef5fdcb9",
+			"name": "GET User API",
+			"url": "https://localhost:7254/api/User/",
+			"time": 111,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Get All Users": true
+			},
+			"testPassFailCounts": {
+				"Get All Users": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				111
+			],
+			"allTests": [
+				{
+					"Get All Users": true
+				}
+			]
+		},
+		{
+			"id": "a6741393-8f69-408a-ae70-667ed2d8a886",
+			"name": "POST User API",
+			"url": "https://localhost:7254/api/User",
+			"time": 79,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Create User": true
+			},
+			"testPassFailCounts": {
+				"Create User": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				79
+			],
+			"allTests": [
+				{
+					"Create User": true
+				}
+			]
+		},
+		{
+			"id": "94e246fe-c60e-4776-8a00-485b7483997e",
+			"name": "PUT User API",
+			"url": "https://localhost:7254/api/User/12",
+			"time": 21,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"updatedpdated User": true
+			},
+			"testPassFailCounts": {
+				"updatedpdated User": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				21
+			],
+			"allTests": [
+				{
+					"updatedpdated User": true
+				}
+			]
+		},
+		{
+			"id": "b9c801ea-38b0-4dbe-9135-e9462b5f541c",
+			"name": "DELETE User API",
+			"url": "https://localhost:7254/api/User/12",
+			"time": 22,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Delete User": true
+			},
+			"testPassFailCounts": {
+				"Delete User": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				22
+			],
+			"allTests": [
+				{
+					"Delete User": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 233,
+	"collection": {
+		"requests": [
+			{
+				"id": "dee2d6d1-80c3-4c43-bf36-9229ef5fdcb9",
+				"method": "GET"
+			},
+			{
+				"id": "a6741393-8f69-408a-ae70-667ed2d8a886",
+				"method": "POST"
+			},
+			{
+				"id": "94e246fe-c60e-4776-8a00-485b7483997e",
+				"method": "PUT"
+			},
+			{
+				"id": "b9c801ea-38b0-4dbe-9135-e9462b5f541c",
+				"method": "DELETE"
+			}
+		]
+	}
+}
