@@ -1,0 +1,200 @@
+{
+	"id": "6408ab3c-430c-415f-9d2f-26fb932bf405",
+	"name": "ASP-Product API Test",
+	"timestamp": "2024-03-27T22:15:15.043Z",
+	"collection_id": "33511578-d2b14f3c-7106-4175-b05b-12d91fb366a8",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 13,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-03-27T22:15:14.186Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "24dc2ec1-404c-45cc-97ed-f286022e755b",
+			"name": "GET Product API",
+			"url": "https://localhost:7254/api/Product/",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response is of type JSON": true,
+				"Get All Products": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is of type JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Get All Products": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response is of type JSON": true,
+					"Get All Products": true
+				}
+			]
+		},
+		{
+			"id": "a8e772c1-7e37-49ff-b7c6-e5a20694b49a",
+			"name": "POST Product API",
+			"url": "https://localhost:7254/api/Product",
+			"time": 14,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response is in JSON format": true,
+				"Response body is not empty": true,
+				"Message is 'Product created successfully.'": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is not empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message is 'Product created successfully.'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				14
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response is in JSON format": true,
+					"Response body is not empty": true,
+					"Message is 'Product created successfully.'": true
+				}
+			]
+		},
+		{
+			"id": "433cf0e1-c2af-4b91-9bc8-c340141d25a3",
+			"name": "PUT Product API",
+			"url": "https://localhost:7254/api/Product/3",
+			"time": 15,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response is of type JSON": true,
+				"Update Product": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is of type JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Update Product": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				15
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response is of type JSON": true,
+					"Update Product": true
+				}
+			]
+		},
+		{
+			"id": "16510892-d7c6-469d-b1a1-72064c32a0fc",
+			"name": "DELETE Product API",
+			"url": "https://localhost:7254/api/Product/4",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response is of type JSON": true,
+				"Delete Product": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is of type JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Delete Product": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response is of type JSON": true,
+					"Delete Product": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 46,
+	"collection": {
+		"requests": [
+			{
+				"id": "24dc2ec1-404c-45cc-97ed-f286022e755b",
+				"method": "GET"
+			},
+			{
+				"id": "a8e772c1-7e37-49ff-b7c6-e5a20694b49a",
+				"method": "POST"
+			},
+			{
+				"id": "433cf0e1-c2af-4b91-9bc8-c340141d25a3",
+				"method": "PUT"
+			},
+			{
+				"id": "16510892-d7c6-469d-b1a1-72064c32a0fc",
+				"method": "DELETE"
+			}
+		]
+	}
+}

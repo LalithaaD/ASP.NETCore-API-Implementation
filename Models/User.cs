@@ -11,5 +11,10 @@ namespace WebAssignment3.Models
         public required string Username { get; set; }
         public required string PurchaseHistory { get; set; }
         public required string ShippingAddress { get; set; }
+
+
+        // Inside the User class
+        public ICollection<Comment> Comments { get; set; }
+
     }
 }
