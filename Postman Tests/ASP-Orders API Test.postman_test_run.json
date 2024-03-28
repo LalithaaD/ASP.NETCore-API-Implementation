@@ -1,0 +1,188 @@
+{
+	"id": "552a9a80-ad46-49a6-9f36-7d205e9b7e92",
+	"name": "ASP-Orders API Test",
+	"timestamp": "2024-03-28T03:10:32.017Z",
+	"collection_id": "33511578-da7bb6c5-33db-4942-989d-4d8507c2c471",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 11,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-03-28T03:10:30.359Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "5feb49f3-7179-41ee-920f-fcff2f2e0456",
+			"name": "GET Order API",
+			"url": "https://localhost:7254/api/Order",
+			"time": 32,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response is of type JSON": true,
+				"Response should contain orders": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is of type JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response should contain orders": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				32
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response is of type JSON": true,
+					"Response should contain orders": true
+				}
+			]
+		},
+		{
+			"id": "4f78622c-98f1-4f59-9aff-bf678f41f931",
+			"name": "POST Order API",
+			"url": "https://localhost:7254/api/Order",
+			"time": 406,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Message is 'Order created successfully.'": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message is 'Order created successfully.'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				406
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Message is 'Order created successfully.'": true
+				}
+			]
+		},
+		{
+			"id": "6a4fd277-8c40-48e4-a4b1-60fbd9660801",
+			"name": "PUT Order API",
+			"url": "https://localhost:7254/api/Order/3",
+			"time": 18,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Response is of type JSON": true,
+				"Update Order": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is of type JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Update Order": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				18
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Response is of type JSON": true,
+					"Update Order": true
+				}
+			]
+		},
+		{
+			"id": "6030d382-b2c8-4705-ac0f-67e6c2c9faee",
+			"name": "DELETE Order API",
+			"url": "https://localhost:7254/api/Order/3",
+			"time": 15,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Response is of type JSON": true,
+				"Delete Order": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is of type JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Delete Order": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				15
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Response is of type JSON": true,
+					"Delete Order": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 471,
+	"collection": {
+		"requests": [
+			{
+				"id": "5feb49f3-7179-41ee-920f-fcff2f2e0456",
+				"method": "GET"
+			},
+			{
+				"id": "4f78622c-98f1-4f59-9aff-bf678f41f931",
+				"method": "POST"
+			},
+			{
+				"id": "6a4fd277-8c40-48e4-a4b1-60fbd9660801",
+				"method": "PUT"
+			},
+			{
+				"id": "6030d382-b2c8-4705-ac0f-67e6c2c9faee",
+				"method": "DELETE"
+			}
+		]
+	}
+}
