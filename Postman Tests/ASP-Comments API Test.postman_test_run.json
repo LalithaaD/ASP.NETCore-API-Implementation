@@ -1,0 +1,176 @@
+{
+	"id": "25b76668-c55a-4df3-be3b-72f02b1fe303",
+	"name": "ASP-Comments API Test",
+	"timestamp": "2024-03-28T21:58:40.941Z",
+	"collection_id": "33511578-26ec6d3f-80d8-4e00-a0dd-9d9381754660",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 9,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-03-28T21:58:39.635Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "0476b53b-df74-4454-95a6-a25aa0e0ac07",
+			"name": "GET Comment API",
+			"url": "https://localhost:7254/api/Comment",
+			"time": 18,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Read Comment": true
+			},
+			"testPassFailCounts": {
+				"Read Comment": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				18
+			],
+			"allTests": [
+				{
+					"Read Comment": true
+				}
+			]
+		},
+		{
+			"id": "c0e03309-b56d-4f26-bd37-a101b527c969",
+			"name": "POST Comment API",
+			"url": "https://localhost:7254/api/Comment",
+			"time": 194,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response is of type JSON": true,
+				"Create Comment": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is of type JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Create Comment": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				194
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response is of type JSON": true,
+					"Create Comment": true
+				}
+			]
+		},
+		{
+			"id": "3bafb617-d3a1-4384-a420-cbc31aa55a47",
+			"name": "PUT Comment API",
+			"url": "https://localhost:7254/api/Comment/1",
+			"time": 9,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Response is of type JSON": true,
+				"Comment updated successfully": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is of type JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Comment updated successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Response is of type JSON": true,
+					"Comment updated successfully": true
+				}
+			]
+		},
+		{
+			"id": "7598a366-4278-4dee-92c9-393900d58778",
+			"name": "DELETE Comment API",
+			"url": "https://localhost:7254/api/Comment/1",
+			"time": 10,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Delete Comment": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Delete Comment": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Delete Comment": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 231,
+	"collection": {
+		"requests": [
+			{
+				"id": "0476b53b-df74-4454-95a6-a25aa0e0ac07",
+				"method": "GET"
+			},
+			{
+				"id": "c0e03309-b56d-4f26-bd37-a101b527c969",
+				"method": "POST"
+			},
+			{
+				"id": "3bafb617-d3a1-4384-a420-cbc31aa55a47",
+				"method": "PUT"
+			},
+			{
+				"id": "7598a366-4278-4dee-92c9-393900d58778",
+				"method": "DELETE"
+			}
+		]
+	}
+}
