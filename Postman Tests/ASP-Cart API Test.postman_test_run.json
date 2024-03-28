@@ -1,0 +1,182 @@
+{
+	"id": "2f6a644c-620f-44d5-a6ee-f06f92e3448a",
+	"name": "ASP-Cart API Test",
+	"timestamp": "2024-03-28T20:50:13.211Z",
+	"collection_id": "33511578-0d0d9f52-e0b3-4346-861b-a4b1a96723ef",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 10,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-03-28T20:50:11.809Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "58cf36e0-a222-4006-91ac-9a865212970c",
+			"name": "GET Cart API",
+			"url": "https://localhost:7254/api/Cart",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Read Carts": true
+			},
+			"testPassFailCounts": {
+				"Read Carts": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Read Carts": true
+				}
+			]
+		},
+		{
+			"id": "f3679967-764a-4203-947e-9c0344f68b3c",
+			"name": "POST Cart API",
+			"url": "https://localhost:7254/api/Cart",
+			"time": 22,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response is of type JSON": true,
+				"Response should be an object": true,
+				"Response contains cart details": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is of type JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response should be an object": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains cart details": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				22
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response is of type JSON": true,
+					"Response should be an object": true,
+					"Response contains cart details": true
+				}
+			]
+		},
+		{
+			"id": "742318f5-2e4c-4fe6-9a9f-cdf0287d1f88",
+			"name": "PUT Cart API",
+			"url": "https://localhost:7254/api/Order/3",
+			"time": 21,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Response is of type JSON": true,
+				"Cart updated successfully": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is of type JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Cart updated successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				21
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Response is of type JSON": true,
+					"Cart updated successfully": true
+				}
+			]
+		},
+		{
+			"id": "4f905323-2846-414a-ae1b-ac6df5f904fe",
+			"name": "DELETE Cart API",
+			"url": "https://localhost:7254/api/Cart/3",
+			"time": 8,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Delete Cart": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Delete Cart": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Delete Cart": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 60,
+	"collection": {
+		"requests": [
+			{
+				"id": "58cf36e0-a222-4006-91ac-9a865212970c",
+				"method": "GET"
+			},
+			{
+				"id": "f3679967-764a-4203-947e-9c0344f68b3c",
+				"method": "POST"
+			},
+			{
+				"id": "742318f5-2e4c-4fe6-9a9f-cdf0287d1f88",
+				"method": "PUT"
+			},
+			{
+				"id": "4f905323-2846-414a-ae1b-ac6df5f904fe",
+				"method": "DELETE"
+			}
+		]
+	}
+}
