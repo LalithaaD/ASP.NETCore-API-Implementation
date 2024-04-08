@@ -9,7 +9,7 @@
 The task involves creating an ASP.NET Core implementation of the server components to facilitate communication between the JavaScript client described in Assignment 1 and a SQLServer database instance using Entity Framework Core.
 The API endpoints are designed to handle CRUD operations for various database entities, including:
 
-**Product: **Contains fields for description, image, pricing, and shipping cost.
+**Product:** Contains fields for description, image, pricing, and shipping cost.
 **User:** Includes fields for email, password, username, purchase history, and shipping address.
 **Comments:** Relates to product reviews with fields for product, user, rating, image(s), and text.
 **Cart:** Manages user's shopping cart with fields for products, quantities, and user information.
